@@ -40,7 +40,7 @@ import TrackListScreen from './TrackListScreen';
 import TrackDetailScreen from './TrackDetailScreen';
 import SignupScreen from './SignupScreen';
 import SigninScreen from './SigninScreen';
-
+import { Provider as AuthProvider } from './src/context/AuthContext';
 
 // Create navigation stacks and tabs
 const Stack = createNativeStackNavigator();
@@ -90,3 +90,15 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// Ha Code Kasa Lihu Varti 
+
+// const App = createAppContainer(switchNavigator);
+
+// export default () => {
+//   return (
+//     <AuthProvider>
+//       <App />
+//     </AuthProvider>
+//   )
+// }
